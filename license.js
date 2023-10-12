@@ -8,7 +8,7 @@ class License {
 
   async requestServer(v1, v2) {
     const url = new URL(
-      `${this.licenseServer}?v1=${v1}&v2=${v2}&pl=${name}`
+      `${this.licenseServer}?v1=${v1}&v2=${v2}&pl=${this.name}`
     );
     const res = await fetch(url.toString(), {
       method: "GET",
